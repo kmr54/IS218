@@ -1,3 +1,3 @@
 function modifyInto(){
-	document.getElementId("p1").innerHTML="Cats are better!";
+	document.getElementById("p1").innerHTML="Cats are better!";
 }
