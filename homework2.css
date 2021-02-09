@@ -14,7 +14,7 @@ html{
 .form{
   text-align:center;
   border: 10px solid white;
-  padding-left: 480px;
+  margin-left: 480px;
   display: inline-block;
 }
 
