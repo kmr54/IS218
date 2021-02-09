@@ -1,5 +1,7 @@
 body{
 color: black;
+  border: 10px solid white;
+    display: inline-block;
 }
 
 html{
