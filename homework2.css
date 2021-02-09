@@ -11,7 +11,7 @@ text-align:center;
 }
 
 #firstname{
-  margin-left:0px;
+  margin-left:20px;
 }
 
 #lastname{
@@ -19,5 +19,5 @@ text-align:center;
 }
 
 #email{
-  margin-left:50px;
+  margin-left:70px;
 }
