@@ -22,3 +22,10 @@ function validateInput(){
         } 
 		return true;
 }
+
+function resetForm(){  
+   document.getElementById("SubmitForm").reset();  
+ } 
+ function submitForm(){  
+	document.getElementById("SubmitForm").submit();
+ }
