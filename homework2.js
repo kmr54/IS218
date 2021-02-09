@@ -30,7 +30,9 @@ function validateInput(){
 	      alert("Invalid email address!"); 
 	      return false; 
       }
-      
-      return true;
+      else{
+	alert("Submitted!");
+      	return true;
+      }
 }
  
