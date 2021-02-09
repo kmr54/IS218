@@ -3,7 +3,7 @@ color: black;
 }
 
 html{
-  background-image: url("https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.bad043c2.jpeg");
+  background-image: url("https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg");
 }
 
 .form{
@@ -15,9 +15,9 @@ text-align:center;
 }
 
 #lastname{
-  margin-left:20px;
+  margin-left:30px;
 }
 
 #email{
-  margin-left:40px;
+  margin-left:30px;
 }
