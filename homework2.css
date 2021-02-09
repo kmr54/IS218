@@ -10,7 +10,6 @@ html{
   text-align:center;
   border: 10px solid white;
   padding-left: 480px;
-  margins: 20px;
   display: inline-block;
 }
 
@@ -23,5 +22,5 @@ html{
 }
 
 #email{
-  margin-left:60px;
+  margin-left:50px;
 }
