@@ -2,6 +2,11 @@ body{
 color: black;
 }
 
+h1{
+  text-align:center;
+}
+ 
+
 html{
   background-image: url("https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg");
 }
