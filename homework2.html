@@ -34,10 +34,13 @@ function validateInput(){
 function resetForm(){  
    document.getElementById("SubmitForm").reset();  
  } 
+function submitForm(){
+  window.alert("Submitted!);	
+}
 
 </script>
 <div class="form">
-<form name="SubmitForm" id="SubmitForm" onsubmit="return validateInput()" action="/submit.php" method="post">
+<form name="SubmitForm" id="SubmitForm" onsubmit="return validateInput()">
   <label for="firstname">First Name:</label>
   <input type="text" name="firstname" id="firstname"><br>
   <label for="lastname">Last Name:</label>
@@ -45,7 +48,7 @@ function resetForm(){
   <label for="email">Email:</label>
   <input type="text" name="email" id="email"><br>
   
-  <input type="submit" value="Submit"/>
+  <input type="submit" value="Submit" onclick = "submitForm()"/>
   <input type="reset" value="Cancel" onclick = "resetForm()"/>
 </form>
 </div>
