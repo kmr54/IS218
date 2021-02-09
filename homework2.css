@@ -8,7 +8,6 @@ html{
 
 .form{
 text-align:center;
-border: 2px solid black
 }
 
 #firstname{
@@ -16,9 +15,9 @@ border: 2px solid black
 }
 
 #lastname{
-  margin-left:0px;
+  margin-left:50px;
 }
 
 #email{
-  margin-left:100px;
+  margin-left:50px;
 }
