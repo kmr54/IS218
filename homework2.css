@@ -1,7 +1,5 @@
 body{
 color: black;
-  border: 10px solid white;
-    display: inline-block;
 }
 
 html{
@@ -9,7 +7,9 @@ html{
 }
 
 .form{
-text-align:center;
+  text-align:center;
+  border: 10px solid white;
+  display: inline-block;
 }
 
 #firstname{
