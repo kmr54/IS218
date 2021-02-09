@@ -1,18 +1,12 @@
 body{
-background-image: url("https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.bad043c2.jpeg");
 color: black;
 }
 
+html{
+  background-image: url("https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.bad043c2.jpeg");
+}
 
 .form{
 text-align:center;
-border-style: solid 3px;
-}
-
-#firstname{
-margin-left:32px;
-}
-
-#lastname{
-margin-left:32px;
+border: 2px solid black
 }
