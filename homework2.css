@@ -10,3 +10,11 @@ html{
 text-align:center;
 border: 2px solid black
 }
+
+#firstname{
+  margin-left:0px;
+}
+
+#lastname{
+  margin-left:0px;
+}
