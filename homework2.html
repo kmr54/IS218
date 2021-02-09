@@ -3,42 +3,11 @@
 
 <head>
 <title>Form Submit</title>
+<script src="homework2.js"></script>
 </head>
 
 <body>
-<script>
-function validateInput(){
-	    var firstname = document.getElementById("firstname").value;
-		var lastname = document.getElementById("lastname").value;
-        var email = document.getElementById("email").value; 
-		var numbers = /^[0-9]+$/;
-        
-        if (firstname.value == "") { 
-            window.alert("Please enter your first name."); 
-            return false; 
-        } 
-		
-  
-        if (lastname.value == "") { 
-            window.alert("Please enter your last name."); 
-            return false; 
-        } 
-  
-        if (email.value == "") { 
-            window.alert("Please enter a valid e-mail address."); 
-            return false; 
-        } 
-		return true;
-}
 
-function resetForm(){  
-   document.getElementById("SubmitForm").reset();  
- } 
-function submitForm(){
-  window.alert("Submitted!);	
-}
-
-</script>
 <div class="form">
 <form name="SubmitForm" id="SubmitForm" onsubmit="return validateInput()">
   <label for="firstname">First Name:</label>
@@ -48,8 +17,8 @@ function submitForm(){
   <label for="email">Email:</label>
   <input type="text" name="email" id="email"><br>
   
-  <input type="submit" value="Submit" onclick = "submitForm()"/>
-  <input type="reset" value="Cancel" onclick = "resetForm()"/>
+  <input type="submit" value="Submit" />
+  <input type="reset" value="Cancel" />
 </form>
 </div>
 
