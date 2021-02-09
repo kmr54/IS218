@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Tech Guru</title>
+<title>Form Submit</title>
 <link rel="stylesheet" href="submit.css">
 <script src="homework2.js"></script>
 </head>
@@ -10,7 +10,7 @@
 <body>
 
 <div class="form">
-<form name="SubmitForm" onsubmit="return validateInput()">
+<form name="SubmitForm" id="SubmitForm" onsubmit="return validateInput()">
   <label for="firstname">First Name:</label>
   <input type="text" name="firstname" id="firstname"><br>
   <label for="lastname">Last Name:</label>
@@ -18,8 +18,8 @@
   <label for="email">Email:</label>
   <input type="text" name="email" id="email" placeholder="me@example.com" required><br>
   
-  <input type="submit" name="Sign Up!"/>
-  <input type="reset" name="Cancel"/>
+  <input type="submit" name="Sign Up!" onclick = "submitForm()" />
+  <input type="reset" name="Cancel" onclick = "resetForm()"/>
 </form>
 </div>
 
