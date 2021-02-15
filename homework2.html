@@ -14,7 +14,7 @@
 </div>
   
 <div class="form">
-<form name="SubmitForm" id="SubmitForm" onsubmit="return validateInput()">
+<form name="SubmitForm" id="SubmitForm">
   <label for="firstname">First Name:</label>
   <input type="text" name="firstname" id="firstname"><br>
   <label for="lastname">Last Name:</label>
@@ -22,7 +22,7 @@
   <label for="email">Email:</label>
   <input type="text" name="email" id="email"><br>
   
-  <input type="submit" value="Submit" />
+  <input type="button" value="Submit" onclick="validateInput()" />
   <input type="reset" value="Cancel" />
 </form>
 </div>
