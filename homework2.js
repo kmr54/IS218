@@ -22,13 +22,30 @@ function validateInput(){
             return false; 
         } 
        
-	if(validateEmail(email)==false){
+	if(validateEmail(firstname)){
 		return false;
 	}
+	
+	if(validateNames(lastname)){
+		return false;
+	}
+	
+	if(validateNames(email)==false){
+		return false;
+	}
+	
 	window.alert("Submitted!");
       	return true;
 }
- 
+
+ function validateNames(name){
+  if(\d/.test(SubmitForm.name.value){
+     alert("Name must only contain letters!");
+     return false;     
+   }
+    return true;
+  }
+
  function validateEmail(email){
  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(SubmitForm.email.value)){
     return true;
