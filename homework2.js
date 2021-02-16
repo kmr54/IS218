@@ -41,9 +41,9 @@ function validateInput(){
  function validateNames(name){
    var pattern = /^([^0-9]*)$/;
    if(!name.value.match(pattern)){
-	   return true;
+	   return false;
    }
-   return false;
+   return true;
   }
 
  function validateEmail(email){
