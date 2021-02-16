@@ -24,12 +24,12 @@ function validateInput(){
 		return false;
 	}
 	
-	if(validateNames(firstname)){
+	if(!validateNames(firstname)){
 		window.alert("Name must only contain letters!");
 		return false;
 	}
 	
-	if(validateNames(lastname)){
+	if(!validateNames(lastname)){
 		window.alert("Name must only contain letters!");
 		return false;
 	}
