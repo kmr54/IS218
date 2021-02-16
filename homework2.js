@@ -22,15 +22,17 @@ function validateInput(){
             return false; 
         } 
        
-	if(validateEmail(firstname)){
+	if(validateEmail(email)==false){
+		return false;
+	}
+	
+	if(validateNames(firstname)){
+		window.alert("Name must only contain letters!");
 		return false;
 	}
 	
 	if(validateNames(lastname)){
-		return false;
-	}
-	
-	if(validateNames(email)==false){
+		window.alert("Name must only contain letters!");
 		return false;
 	}
 	
@@ -39,11 +41,7 @@ function validateInput(){
 }
 
  function validateNames(name){
-  if(\d/.test(SubmitForm.name.value){
-     alert("Name must only contain letters!");
-     return false;     
-   }
-    return true;
+   return !isNaN(parseFloat(n)) && isFinite(n);
   }
 
  function validateEmail(email){
