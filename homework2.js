@@ -3,8 +3,6 @@ function validateInput(){
       var firstname = document.getElementById("firstname");
       var lastname = document.getElementById("lastname");
       var email = document.getElementById("email"); 
-      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-      var hasNumber = /\d/;
         
         if (firstname.value == "") { 
             window.alert("Please enter your first name."); 
@@ -41,7 +39,7 @@ function validateInput(){
 }
 
  function validateNames(name){
-   return !isNaN(parseFloat(n)) && isFinite(n);
+   return !isNaN(parseFloat(SubmitForm.name.value)) && isFinite(SubmitForm.name.value);
   }
 
  function validateEmail(email){
