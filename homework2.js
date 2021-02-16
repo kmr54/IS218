@@ -22,17 +22,17 @@ function validateInput(){
             return false; 
         } 
        
-      if(hasNumber.test("firstname")==true || hasNumber.test("lastname")==true){
-      	return false;       
-       }
-       
-      if ( !(input.value.match(validRegex)) ) {
-	      alert("Invalid email address!"); 
-	      return false; 
-      }
-      else{
-	alert("Submitted!");
+	if(validateEmail(email)==false){
+		return false;
+	}
+	window.alert("Submitted!");
       	return true;
-      }
 }
  
+ function validateEmail(email){
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(SubmitForm.email.value)){
+    return true;
+  }
+    alert("You have entered an invalid email address!")
+    return false;
+}
