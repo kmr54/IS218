@@ -40,7 +40,7 @@ function validateInput(){
 
  function validateNames(name){
    var pattern = /^([^0-9]*)$/;
-   if(!SubmitForm.name.value.match(pattern)){
+   if(!name.value.match(pattern)){
 	   return true;
    }
    return false;
