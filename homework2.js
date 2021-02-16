@@ -24,12 +24,12 @@ function validateInput(){
 		return false;
 	}
 	
-	if(!validateNames(firstname)){
+	if(validateNames(firstname)==false){
 		window.alert("Name must only contain letters!");
 		return false;
 	}
 	
-	if(!validateNames(lastname)){
+	if(validateNames(lastname)==false){
 		window.alert("Name must only contain letters!");
 		return false;
 	}
@@ -39,7 +39,11 @@ function validateInput(){
 }
 
  function validateNames(name){
-   return !isNaN(parseFloat(SubmitForm.name.value)) && isFinite(SubmitForm.name.value);
+   var pattern = /^([^0-9]*)$/;
+   if(!SubmitForm.name.value.match(pattern)){
+	   return true;
+   }
+   return false;
   }
 
  function validateEmail(email){
